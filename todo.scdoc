@@ -1,0 +1,36 @@
+todo(1)
+
+# NAME
+todo - the stupid todo list
+
+# SYNOPSIS 
+todo [_--create_, _-c_ *task*]  [_--delete_, _-d_ *task number*] [_--list_,
+_-l_]
+
+# DESCRIPTION
+*Todo* is a simple and stupid todo list.
+
+# USAGE
+Calling it without args will consider _--list_.
+
+_--list_, _-l_ Lists out all your tasks.
+
+_--create_, _-c_ *task* Creates a new task
+
+_--delete_, _-d_ *task number* Deletes the task numbered
+
+# EXAMPLES
+```
+
+$ todo
+> 1 - buy some beer
+$ todo -d 1
+$ todo
+> you completed all your tasks! <3
+$ todo -c 'write the kernel'
+$ todo -c 'call tux'
+$ todo -l
+> 1 - write the kernel
+> 2 - call tux
+
+```
